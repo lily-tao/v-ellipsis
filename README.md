@@ -1,22 +1,22 @@
-# v-ellipsis
+# v-directive-ellipsis
 基于vue2的自定义文本省略指令
 - 支持单行、多行省略，
 - 支持鼠标移入时，出现气泡框提示
 
 ## 安装
 ```
-    npm install v-ellipsis
+    npm install v-directive-ellipsis
 ```
 or
 
 ```
-    yarn add v-ellipsis
+    yarn add v-directive-ellipsis
 ```
 ## 注册
 ```javascript
     import Vue from 'vue';
-    import Ellipsis from 'v-ellipsis';
-    import 'v-ellipsis/dist/ellipsis.umd.css';
+    import Ellipsis from 'v-directive-ellipsis';
+    import 'v-directive-ellipsis/dist/ellipsis.umd.css';
 
     Vue.directive('ellipsis', Ellipsis);
 ```
