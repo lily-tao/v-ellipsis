@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文本省略指令示例</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <link rel="stylesheet" type="text/css" href="./dist/ellipsis.umd.css"></link>
+  <script src='./dist/ellipsis.umd.js'></script>
+  <style lang="less" scoped>
+    .ellipsis {
+      width: 1000px;
+      height: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #8a2be23b;
+    }
+    .single-line, .multiple-lines {
+      width: 320px;
+      border-radius: 4px;
+      border: 1px solid #a5679a5c;
+    }
+    .single-line {
+      height: 24px;
+      line-height: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app" class="ellipsis">
+    <!-- 单行 -->
+    <div class="single-line" v-ellipsis="text">
+      短文本，鼠标移入不显示浮层卡片
+    </div>
+    <!-- 单行 -->
+    <div class="single-line" v-ellipsis="text">
+      {{ text }}
+    </div>
+    <!-- 多行 -->
+    <div class="multiple-lines" v-ellipsis="{ placement: 'bottom', text: multText, line:3 }">
+      {{ multText }}
+    </div>
+  </div>
+</body>
+<script>
+  Vue.directive('ellipsis', ellipsis)
+  const app = new Vue({
+    el: '#app',
+    data() {
+    return {
+      text: '单行文本，你好呀 ^-^， 我是用来测试 v-ellipsis 自定义文本省略的栗子',
+      multText: '多行文本，你好呀 ^-^， 我是用来测试 v-ellipsis 自定义文本省略的栗子; 你好呀 ^-^， 我是用来测试v-ellipsis自定义文本省略的栗子;你好呀 ^-^， 我是用来测试v-ellipsis自定义文本省略的栗子'
+    }
+   }
+  })
+</script>
+
+</html>
