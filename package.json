@@ -17,8 +17,9 @@
   "author": "lily",
   "license": "ISC",
   "repository": {
+    "main": "dist/ellipsis.umd.js",
     "type": "git",
-    "url": "https://github.com/bmsherry/v-ellipsis"
+    "url": "https://github.com/lily-tao/v-ellipsis"
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",
