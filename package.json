@@ -2,7 +2,7 @@
   "name": "v-directive-ellipsis",
   "version": "1.0.0",
   "description": "a ellipsis tooltip",
-  "main": "index.js",
+   "main": "dist/ellipsis.umd.js",
   "scripts": {
     "build": "rollup -c rollup.config.js & npm run less",
     "commit": "git add . && git-cz",
@@ -17,7 +17,6 @@
   "author": "lily",
   "license": "ISC",
   "repository": {
-    "main": "dist/ellipsis.umd.js",
     "type": "git",
     "url": "https://github.com/lily-tao/v-ellipsis"
   },
