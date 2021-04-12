@@ -1,0 +1,126 @@
+.v-tooltip__popper {
+  position: absolute;
+  z-index: 1020;
+}
+.v-tooltip__content {
+  padding: 6px 8px;
+  max-width: 200px;
+  color: #FFF;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.75);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  word-wrap: break-word;
+}
+.v-tooltip__arrow {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+}
+/**
+* Top
+*/
+.v-tooltip--top,
+.v-tooltip--top-left,
+.v-tooltip--top-right {
+  padding: 4px 0;
+  margin-top: -2px;
+}
+.v-tooltip--top .v-tooltip__arrow,
+.v-tooltip--top-left .v-tooltip__arrow,
+.v-tooltip--top-right .v-tooltip__arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -4px;
+  border-bottom-width: 0;
+  border-top-color: rgba(0, 0, 0, 0.75);
+}
+.v-tooltip--top-left .v-tooltip__arrow {
+  left: 12px;
+  right: initial;
+}
+.v-tooltip--top-right .v-tooltip__arrow {
+  left: initial;
+  right: 8px;
+}
+/**
+* Bottom
+*/
+.v-tooltip--bottom,
+.v-tooltip--bottom-left,
+.v-tooltip--bottom-right {
+  padding: 4px 0;
+  margin-top: 2px;
+}
+.v-tooltip--bottom .v-tooltip__arrow,
+.v-tooltip--bottom-left .v-tooltip__arrow,
+.v-tooltip--bottom-right .v-tooltip__arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -4px;
+  border-top-width: 0;
+  border-bottom-color: rgba(0, 0, 0, 0.75);
+}
+.v-tooltip--bottom-left .v-tooltip__arrow {
+  left: 12px;
+  right: initial;
+}
+.v-tooltip--bottom-right .v-tooltip__arrow {
+  left: initial;
+  right: 8px;
+}
+/**
+* Left
+*/
+.v-tooltip--left,
+.v-tooltip--left-top,
+.v-tooltip--left-bottom {
+  padding: 0 4px;
+  margin-left: -2px;
+}
+.v-tooltip--left .v-tooltip__arrow,
+.v-tooltip--left-top .v-tooltip__arrow,
+.v-tooltip--left-bottom .v-tooltip__arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -4px;
+  border-right-width: 0;
+  border-left-color: rgba(0, 0, 0, 0.75);
+}
+.v-tooltip--left-top .v-tooltip__arrow {
+  top: 12px;
+  bottom: initial;
+}
+.v-tooltip--left-bottom .v-tooltip__arrow {
+  top: initial;
+  bottom: 8px;
+}
+/**
+* Right
+*/
+.v-tooltip--right,
+.v-tooltip--right-top,
+.v-tooltip--right-bottom {
+  padding: 0 4px;
+  margin-left: 2px;
+}
+.v-tooltip--right .v-tooltip__arrow,
+.v-tooltip--right-top .v-tooltip__arrow,
+.v-tooltip--right-bottom .v-tooltip__arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -4px;
+  border-left-width: 0;
+  border-right-color: rgba(0, 0, 0, 0.75);
+}
+.v-tooltip--right-top .v-tooltip__arrow {
+  top: 12px;
+  bottom: initial;
+}
+.v-tooltip--right-bottom .v-tooltip__arrow {
+  top: initial;
+  bottom: 8px;
+}
