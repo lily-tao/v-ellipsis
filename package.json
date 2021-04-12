@@ -1,6 +1,6 @@
 {
   "name": "v-directive-ellipsis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a ellipsis tooltip",
    "main": "dist/ellipsis.umd.js",
   "scripts": {
