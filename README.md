@@ -3,6 +3,9 @@
 - 支持单行、多行省略，
 - 支持鼠标移入时，出现气泡框提示
 
+在线示例
+https://codesandbox.io/s/x9ike
+
 ## 安装
 ```
     npm install v-directive-ellipsis
