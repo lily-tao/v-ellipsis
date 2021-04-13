@@ -41,4 +41,4 @@ or
 | --- | --- | --- | --- |
 | text|文本信息 | String | 无|
 | line| 行数 | Number | 1 |
-| placement|气泡框位置, 可选：<br>`top`  `top-left` `top-right` `left` `left-top` `left-bottom` <br>`right` `right-top` `right-bottom` `bottom` `bottom-left` `bottom-right` | String | top|
+| placement|气泡框位置， 可选：<br>`top`  `top-left` `top-right` `left` `left-top` `left-bottom` <br>`right` `right-top` `right-bottom` `bottom` `bottom-left` `bottom-right` | String | top|
