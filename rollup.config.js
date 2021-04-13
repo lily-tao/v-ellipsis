@@ -6,7 +6,7 @@ import commonjs from '@rollup/plugin-commonjs'
 export default {
   input: 'src/index.js',
   output: {
-    file: 'dist/ellipsis.umd.js',
+    file: 'dist/ellipsis.js',
     name: 'ellipsis',
     format: 'umd'
   },
@@ -19,8 +19,7 @@ export default {
     }),
     babel({
         include: 'src',
-        exclude: 'node_modules/**',
-        babelHelpers: 'bundled'
+        exclude: 'node_modules/**'
     }),
     commonjs(),
     terser()

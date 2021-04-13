@@ -1,6 +1,6 @@
 import { setPopoverPosition } from './popper.js'
 
-const valueMap = {}
+const textMap = {}
 const handelMouseOver = (el, binding) => {
   const isShow = el.offsetWidth < el.scrollWidth || el.offsetHeight < el.scrollHeight
   if (isShow) {
@@ -14,7 +14,7 @@ const handelMouseOver = (el, binding) => {
 
     const content = document.createElement('div')
     content.className = 'v-tooltip__content'
-    content.innerHTML = valueMap[el.sy]
+    content.innerHTML = textMap[el.sy]
     popper.appendChild(content)
 
     document.body.appendChild(popper)
@@ -46,13 +46,13 @@ const vEllipsis = {
   inserted (el, binding, vnode) {
     const sy = Symbol(vnode)
     el.sy = sy
-    valueMap[sy] = binding.value.text || binding.value
+    textMap[sy] = binding.value.text || binding.value
   },
   componentUpdated (el, binding) {
-    valueMap[el.sy] = binding.value.text || binding.value
+    textMap[el.sy] = binding.value.text || binding.value
   },
   unbind (el) {
-    delete valueMap[el.sy]
+    delete textMap[el.sy]
     el.removeEventListener('mouseover', handelMouseOver)
     el.removeEventListener('mouseout', handelMouseOut)
   }

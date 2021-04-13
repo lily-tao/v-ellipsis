@@ -33,7 +33,7 @@ export const setPopoverPosition = (popover, trigger, placement) => {
       position.left = left - popover.offsetWidth
       position.top = bottom - popover.offsetHeight
       break
-      /* right */
+    /* right */
     case 'right':
       position.left = right
       position.top = top + (trigger.offsetHeight / 2) - (popover.offsetHeight / 2)
@@ -46,7 +46,7 @@ export const setPopoverPosition = (popover, trigger, placement) => {
       position.left = right
       position.top = bottom - popover.offsetHeight
       break
-      /* bottom */
+    /* bottom */
     case 'bottom':
       position.left = left + (trigger.offsetWidth / 2) - (popover.offsetWidth / 2)
       position.top = bottom
