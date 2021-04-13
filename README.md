@@ -19,7 +19,7 @@ or
 ```javascript
     import Vue from 'vue';
     import Ellipsis from 'v-directive-ellipsis';
-    import 'v-directive-ellipsis/dist/ellipsis.umd.css';
+    import 'v-directive-ellipsis/dist/ellipsis.css';
 
     Vue.directive('ellipsis', Ellipsis);
 ```
